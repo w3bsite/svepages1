@@ -1,0 +1,12 @@
+{
+  "version": 3,
+  "file": "bundle.css",
+  "sources": [
+    "Navi.svelte"
+  ],
+  "sourcesContent": [
+    "<script>\r\n  import { Button, ButtonGroup } from \"sveltestrap\";\r\n  export let page;\r\n\r\n  $: console.log(page.name);\r\n  let red = \"Home\";\r\n</script>\r\n\r\n<style>\r\n  .red {\r\n    background-color: blueviolet !important;\r\n  }\r\n  .rd {\r\n    font: 100px sans-serif;\r\n  }\r\n  div {\r\n    transition-duration: 3s;\r\n  }\r\n</style>\r\n\r\n<div class=\"w3-panel panel-default w3-indigo my-10 \">\r\n\r\n  <div\r\n    class=\"panel-heading w3-hover-text-white w3-hover-indigo w3-hover-text-wide\">\r\n    <h2>Fit-Games</h2>\r\n\r\n  </div>\r\n\r\n</div>\r\n<div class=\" btn-group btn-group-lg w3-cell-row \">\r\n\r\n  <a\r\n    class=\"w3-button w3-indigo col-md-4 w3-hover-white\"\r\n    class:red={page.name === 'Home'}\r\n    role=\"button\"\r\n    href=\"/\">\r\n    Home\r\n  </a>\r\n  <a\r\n    class=\"w3-button w3-indigo col-md-4 w3-hover-white\"\r\n    class:red={page.name === 'Games_1'}\r\n    role=\"button\"\r\n    href=\"/Games\">\r\n    Games\r\n  </a>\r\n  <a\r\n    class=\"w3-button w3-indigo col-md-4 w3-hover-white\"\r\n    class:red={page.name === 'AboutUs'}\r\n    role=\"button\"\r\n    href=\"/AboutUs\">\r\n    About-Us\r\n  </a>\r\n</div>\r\n"
+  ],
+  "names": [],
+  "mappings": "AASE,IAAI,eAAC,CAAC,AACJ,gBAAgB,CAAE,UAAU,CAAC,UAAU,AACzC,CAAC,AAID,GAAG,eAAC,CAAC,AACH,mBAAmB,CAAE,EAAE,AACzB,CAAC"
+}
